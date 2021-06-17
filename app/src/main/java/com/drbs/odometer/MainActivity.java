@@ -66,8 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 if (bound && odometer != null) {
                     distance = odometer.getDistance();
                 }
+//                String distanceStr = String.format(Locale.getDefault(),
+//                                                    "%1$, .2f miles",
+//                                                    distance);
                 String distanceStr = String.format(Locale.getDefault(),
-                                                    "%1$, .2f miles",
+                                                    "%1$, .2f meters",
                                                     distance);
                 distanceView.setText(distanceStr);
                 handler.postDelayed(this, 1000);
